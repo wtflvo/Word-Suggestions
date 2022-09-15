@@ -1,0 +1,29 @@
+
+.popupContainer {
+	position: absolute;
+	display: inline-block;
+	z-index: 999;
+	
+}
+
+
+.popup {
+	width: 150px;
+
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px;
+	margin: 7px 0 0 0;
+	
+}
+.buttonWords {
+	width: 100%;
+	margin: 2px auto 2px auto;
+	background-color: #555;
+	color: white;
+	font-weight: bold;
+	font-family: "Courier New", Courier, monospace;
+}
+

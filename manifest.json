@@ -1,0 +1,100 @@
+{
+	// Required
+	"manifest_version": 3,
+	"name": "Word Suggestions",
+	"version": "1.0",
+	"author": "Viacheslav Lutskov",
+	// "background": {
+	// 	"service_worker": "background.js"
+	// },
+	"permissions": ["activeTab"],
+	"action": {
+		"default_icon": {
+			"19": "icon16px.png",
+			"38": "icon48px.png"
+		}
+	},
+	//   "19": "images/icon19.png",
+	//	  "38": "images/icon38.png"
+	// 	},
+	// 	"default_popup": "popup.html"
+	//   },
+	"icons": {
+		"16": "icon16px.png",
+		"48": "icon48px.png",
+		"128": "icon128px.png"
+	},
+	// "default_locales": "en",
+	"description": "Suggestions for the input text elements and contenteditable elements",
+	"content_scripts": [
+		{ "matches": ["<all_urls>"], "js": ["index.js"], "css": ["index.css"] }
+	]
+}
+// "default_popup": "popup.html"
+
+// Optional
+
+//     "automation": ...,
+//     "background": {
+//       // Required
+//       "service_worker": "background.js",
+//       // Optional
+//       "type": ...
+//     },
+//     "chrome_settings_overrides": {...},
+//     "chrome_url_overrides": {...},
+//     "commands": {...},
+//     "content_capabilities": ...,
+
+//     "content_security_policy": {...},
+//     "converted_from_user_script": ...,
+//     "cross_origin_embedder_policy": {"value": "require-corp"},
+//     "cross_origin_opener_policy": {"value": "same-origin"},
+//     "current_locale": ...,
+//     "declarative_net_request": ...,
+//     "devtools_page": "devtools.html",
+//     "differential_fingerprint": ...,
+//     "event_rules": [{...}],
+//     "externally_connectable": {
+//       "matches": ["*://*.example.com/*"]
+//     },
+//     "file_browser_handlers": [...],
+//     "file_system_provider_capabilities": {
+//       "configurable": true,
+//       "multiple_mounts": true,
+//       "source": "network"
+//     },
+//     "homepage_url": "https://path/to/homepage",
+//     "host_permissions": [...],
+//     "import": [{"id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}],
+//     "incognito": "spanning, split, or not_allowed",
+//     "input_components": ...,
+//     "key": "publicKey",
+//     "minimum_chrome_version": "versionString",
+//     "nacl_modules": [...],
+//     "natively_connectable": ...,
+//     "oauth2": ...,
+//     "offline_enabled": true,
+//     "omnibox": {
+//       "keyword": "aString"
+//     },
+//     "optional_host_permissions": ["..."],
+//     "optional_permissions": ["tabs"],
+//     "options_page": "options.html",
+//     "options_ui": {
+//       "page": "options.html"
+//     },
+//     "permissions": ["tabs"],
+//     "platforms": ...,
+//     "replacement_web_app": ...,
+//     "requirements": {...},
+//     "sandbox": [...],
+//     "short_name": "Short Name",
+//     "storage": {
+//       "managed_schema": "schema.json"
+//     },
+//     "system_indicator": ...,
+//     "tts_engine": {...},
+//     "update_url": "https://path/to/updateInfo.xml",
+//     "version_name": "aString",
+//     "web_accessible_resources": [...]
