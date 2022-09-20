@@ -1,0 +1,25 @@
+{
+	"manifest_version": 3,
+	"name": "Word Suggestions Lite",
+	"version": "2.0",
+	"author": "Viacheslav Lutskov",
+
+	"permissions": ["activeTab"],
+	"action": {
+		"default_icon": {
+			"19": "icon16px.png",
+			"38": "icon48px.png"
+		}
+	},
+
+	"icons": {
+		"16": "icon16px.png",
+		"48": "icon48px.png",
+		"128": "icon128px.png"
+	},
+
+	"description": "Suggestions for input text elements and contenteditable elements",
+	"content_scripts": [
+		{ "matches": ["<all_urls>"], "js": ["index.js"], "css": ["index.css"] }
+	]
+}
